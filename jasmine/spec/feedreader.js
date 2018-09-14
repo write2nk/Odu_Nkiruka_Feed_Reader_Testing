@@ -115,7 +115,7 @@ $(function() {
          // a test that ensures when a new feed is loaded that the content actually changes.
          
 
-         it('content actually changes', function(done){
+         it('content actually changes', function(){
             var newFeedSelection = document.querySelector('.feed').innerHTML;
             expect(newFeedSelection).not.toBe(oldFeedSelection);
            
