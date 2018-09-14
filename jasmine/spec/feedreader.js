@@ -118,7 +118,7 @@ $(function() {
          it('content actually changes', function(done){
             var newFeedSelection = document.querySelector('.feed').innerHTML;
             expect(newFeedSelection).not.toBe(oldFeedSelection);
-            done();
+           
          });
     });
    
