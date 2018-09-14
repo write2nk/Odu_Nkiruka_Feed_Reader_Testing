@@ -15,9 +15,21 @@ The test suite for the feed reader testing is basically, four:
 * To test if it works properly, change `allFeeds` in `apps.js` to be empty array and refesh the page to see what happens.
 * also checks if URL is defined and if the Name property is not empty
 
-2. The Menu Test suite
+2. The Menu Test suite:
 * The second test suite that ensures that all menu element is hidden by default.
+* The menu toggle events in chrome dev tools, which shows and hide the menu icon by toggling the class `menu-hidden` on `<body>` tag.
 
+3. Initial Entries Suite:
+* It is the third test suite that ensures that when the `loadFeed` function is called that it completes its work, 
+* The loadFeed is also asynchronous so that the feedreadertest runs `beforeEach()`and `done()` it runs and loads correctly
 
+4. News Feed Selection:
+* It is the last test suite that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
+
+## Dependencies ##
+- Google APIs
+- Jasmine 2.1.2
+
+To test view the App, simply click the [link](https://write2nk.github.io/Odu_Nkiruka_Feed_Reader_Testing/) 
 
 https://write2nk.github.io/Odu_Nkiruka_Feed_Reader_Testing/
