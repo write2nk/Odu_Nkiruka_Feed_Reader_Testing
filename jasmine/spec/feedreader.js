@@ -109,16 +109,12 @@ $(function() {
        beforeEach(function (done) {
            loadFeed(0, function () {
                firstFeed = document.querySelector('.feed').innerHTML;
-               loadFeed(1, done);//function () {
-                  // done();
-               //});
+               loadFeed(1, done);
            });
-
        });
 
          // a test that ensures when a new feed is loaded that the content actually changes.
          
-
          it('content actually changes', function(){
             var newFeedSelection = document.querySelector('.feed').innerHTML;
             expect(newFeedSelection).not.toBe(oldFeedSelection);
