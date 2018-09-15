@@ -89,13 +89,16 @@ $(function() {
                 // a test that ensures when the loadFee function is called that it completes its work,
                 // loadFeed() is asynchronous so this test will require
 
-         beforeEach(function(done){
+         beforeEach(function (done) {
             loadFeed(0, done);
-         });
-         it('a function completes work', function(){
-            const feed = document.querySelector('.feed');
-            expect(feed.children.length > 0).toBe(true);
-         });
+        });
+        it('completes work', function (){
+           
+            const feed = $('.feed .entry');
+            expect(feed.length > 0).toBe(true);
+            
+        });
+
 
     });
     
