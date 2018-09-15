@@ -105,15 +105,12 @@ $(function() {
     // a new test suite "New Feed Selection"
      describe('New Feed Selection', function () {
 
-       let firstFeed;
+       let oldFeedSelection;
        beforeEach(function (done) {
            loadFeed(0, function () {
-               firstFeed = document.querySelector('.feed').innerHTML;
-               loadFeed(1,function (){
-                   done();
-              });
+               oldFeedSelection = document.querySelector('.feed').innerHTML;
+               loadFeed(1, done);
            });
-
        });
 
          // a test that ensures when a new feed is loaded that the content actually changes.
