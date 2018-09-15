@@ -109,7 +109,7 @@ $(function() {
          beforeEach(function(done){
             loadFeed(0, function(){
                 oldFeedSelection = document.querySelector(".feed").innerHTML;
-                loadFeed(1, function(){
+                loadFeed(1, done(){
                     done();
                 });
             });
