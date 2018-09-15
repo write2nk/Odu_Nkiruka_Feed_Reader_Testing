@@ -115,7 +115,6 @@ $(function() {
            });
 
        });
-        });
 
          // a test that ensures when a new feed is loaded that the content actually changes.
          
