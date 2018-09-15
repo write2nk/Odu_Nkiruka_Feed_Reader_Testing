@@ -104,7 +104,6 @@ $(function() {
     
     // a new test suite "New Feed Selection"
      describe('New Feed Selection', function () {
-
        let oldFeedSelection;
        beforeEach(function (done) {
            loadFeed(0, function () {
